@@ -2,7 +2,7 @@ wget https://mirrors.edge.kernel.org/pub/linux/kernel/v4.x/linux-4.12.tar.gz
 
 
 
-内核参数配置：
+Kernel Parameters: 
 CONFIG_CGROUP_BPF=y
 CONFIG_BPF=y
 CONFIG_BPF_SYSCALL=y
