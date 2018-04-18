@@ -14,3 +14,10 @@ CONFIG_LWTUNNEL_BPF=y
 CONFIG_HAVE_EBPF_JIT=y
 CONFIG_BPF_EVENTS=y
 CONFIG_TEST_BPF=m
+
+
+
+cmake .. -DLLVM_TARGETS_TO_BUILD="BPF;X86" -DBUILD_SHARED_LIBS=OFF -DCMAKE_BUILD_TYPE=Release -DLLVM_BUILD_RUNTIME=OFF
+wget https://cmake.org/files/v3.10/cmake-3.10.3-Linux-x86_64.tar.gz
+wget http://releases.llvm.org/4.0.0/cfe-4.0.0.src.tar.xz
+wget http://releases.llvm.org/4.0.0/llvm-4.0.0.src.tar.xz
